@@ -142,12 +142,12 @@ const exp_profesional = [
     {
         "titulo": "Técnico en sistemas audiovisuales",
         "periodo": "03/2024 - 06/2024",
-        "Empresa": "Trison"
+        "centro": "Trison"
     },
     {
         "titulo": "Técnico de telecomunicaciones",
         "periodo": "09/24 - 05/25",
-        "Empresa": "Emtel del noroeste"
+        "centro": "Emtel del noroeste"
     }
 ];
 
@@ -166,7 +166,7 @@ function mostrarExperiencia(experiencias, lista) {
         periodo.textContent = "Periodo: " + item.periodo;
 
         const centro = document.createElement("p");
-        centro.textContent = "Centro/Empresa: " + item.Empresa;
+        centro.textContent = "Centro/Empresa: " + item.centro;
 
         li.appendChild(titulo);
         li.appendChild(periodo);
