@@ -6,6 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi página personal</title>
 </head>
+<style>
+    
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Títulos de las secciones */
+main h2 {
+    color: #1d4ed8;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3b82f6;
+}
+
+/* Listas */
+main ul {
+    list-style: none;
+    margin-bottom: 40px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Elementos de las listas */
+main li {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    border-radius: 5px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+/* Efecto al pasar el ratón */
+main li:hover {
+    background-color: #dbeafe;
+    transform: translateX(5px);
+}
+
+/* Adaptación a móviles */
+@media (max-width: 600px) {
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin: 25px auto;
+        padding: 0 15px;
+    }
+
+    main h2 {
+        font-size: 1.3rem;
+    }
+}
+
+</style>
 <body>
 
     <header>
