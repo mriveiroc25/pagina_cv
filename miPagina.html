@@ -107,12 +107,12 @@ main li:hover {
 
     <main>
         <h2>Experiencia Academica</h2>
-        <ul>
+        <ul id="experiencia-academica">
             <li>CS Sistemas de Telecomunicaciones e Informaticos</li>
             <li>CS Desarrollo de Apliaciones Web</li>
         </ul>
 
-        <h2>Experiencia profesional </h2>
+        <h2 id="experiencia-profesional">Experiencia profesional </h2>
         <ul>
             <li>Técnico en sistemas audiovisuales</li>
             <li>Técnico de telecomunicaciones</li>
@@ -122,4 +122,62 @@ main li:hover {
     </main>
 
 </body>
+
+<script>
+    
+const exp_academica = [
+    {
+        "titulo": "GS Desarrollo de Aplicaciones Web",
+        "periodo": "2025-27",
+        "centro": "CPR Afundación A Coruña"
+    },
+    {
+        "titulo": "GM Sistemas Microinformáticos y Redes",
+        "periodo": "2023-25",
+        "centro": "Otro cole"
+    }
+];
+
+const exp_profesional = [
+    {
+        "titulo": "Técnico en sistemas audiovisuales",
+        "periodo": "03/2024 - 06/2024",
+        "Empresa": "Trison"
+    },
+    {
+        "titulo": "Técnico de telecomunicaciones",
+        "periodo": "09/24 - 05/25",
+        "Empresa": "Emtel del noroeste"
+    }
+];
+
+const listaAcademica = document.getElementById("experiencia-academica");
+const listaProfesional = document.getElementById("experiencia-profesional");
+
+
+function mostrarExperiencia(experiencias, lista) {
+    experiencias.forEach(function (item) {
+        const li = document.createElement("li");
+
+        const titulo = document.createElement("h3");
+        titulo.textContent = item.titulo;
+
+        const periodo = document.createElement("p");
+        periodo.textContent = "Periodo: " + item.periodo;
+
+        const centro = document.createElement("p");
+        centro.textContent = "Centro/Empresa: " + item.centro;
+
+        li.appendChild(titulo);
+        li.appendChild(periodo);
+        li.appendChild(centro);
+
+        lista.appendChild(li);
+    });
+}
+
+mostrarExperiencia(exp_academica, listaAcademica);
+mostrarExperiencia(exp_profesional, listaProfesional);
+
+</script>
 </html>
